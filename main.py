@@ -119,7 +119,7 @@ def pressEqual():
         result.set('error')
 
 
-
+#when clearing
     #  a = str(endNum)
     #  b = '='+a            
     #  c = b[0:10]           
