@@ -1,5 +1,6 @@
 import tkinter 
 
+#creating the main window
 root = tkinter.Tk()
 root.minsize(280, 500)
 root.title('calculator')
@@ -15,7 +16,7 @@ label2 = tkinter.Label(root, font=('courier', 30), bg='#EEE9E9', bd='9', fg='bla
 label2.place(y=170, width=280, height=60)
 
 
-
+#Adding the buttons
 btn7 = tkinter.Button(root, text='7', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressNum('7'))
 btn7.place(x=0, y=285, width=70, height=55)
 btn8 = tkinter.Button(root, text='8', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressNum('8'))
