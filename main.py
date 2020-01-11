@@ -16,7 +16,7 @@ label2 = tkinter.Label(root, font=('courier', 30), bg='#EEE9E9', bd='9', fg='bla
 label2.place(y=170, width=280, height=60)
 
 
-#Adding the buttons
+#Adding the number buttons
 btn7 = tkinter.Button(root, text='7', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressNum('7'))
 btn7.place(x=0, y=285, width=70, height=55)
 btn8 = tkinter.Button(root, text='8', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressNum('8'))
@@ -40,7 +40,7 @@ btn3.place(x=140, y=395, width=70, height=55)
 btn0 = tkinter.Button(root, text='0', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressNum('0'))
 btn0.place(x=70, y=450, width=70, height=55)
 
-
+#Adding Operation Buttons
 btnac = tkinter.Button(root, text='AC', bd=0.5, font=('courier', 20), fg='orange', command=lambda: pressCompute('AC'))
 btnac.place(x=0, y=230, width=70, height=55)
 btnback = tkinter.Button(root, text='←', font=('courier', 20), fg='#4F4F4F', bd=0.5, command=lambda: pressCompute('b'))
@@ -61,12 +61,12 @@ btnper.place(x=0, y=450, width=70, height=55)
 btnpoint = tkinter.Button(root, text='.', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressCompute('.'))
 btnpoint.place(x=140, y=450, width=70, height=55)
 
-
+#Global list andBoolean Variables
 lists = []  
 isPressSign = False 
 isPressNum = False
 
-
+#When a Number is Pressed
 def pressNum(num): 
     global lists 
     global isPressSign
@@ -83,7 +83,7 @@ def pressNum(num):
         newnum = oldnum + num
         result.set(newnum)  
 
-
+#When Equalto is Pressed
 def pressCompute(sign):
     global lists
     global isPressSign
