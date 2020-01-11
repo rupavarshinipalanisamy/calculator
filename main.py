@@ -101,7 +101,7 @@ def pressCompute(sign):
         lists.clear()
         result.set(a)
 
-
+#excepton 
 def pressEqual():
     global lists
     global isPressSign
