@@ -117,12 +117,7 @@ def pressEqual():
         result.set(content + '\n' + str(result))
     except:
         result.set('error')
-
-
-#when clearing
-    #  a = str(endNum)
-    #  b = '='+a            
-    #  c = b[0:10]           
+         
     result.set(endNum)  
     result2.set(computrStr)  
     lists.clear()  
