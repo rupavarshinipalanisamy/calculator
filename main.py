@@ -8,13 +8,13 @@ result = tkinter.StringVar()
 result.set(0)  
 result2 = tkinter.StringVar()  
 result2.set('')
-# 显示版
+
 label = tkinter.Label(root, font=('Courier', 20), bg='#EEE9E9', bd='9', fg='#828282', anchor='se', textvariable=result2)
 label.place(width=280, height=170)
 label2 = tkinter.Label(root, font=('courier', 30), bg='#EEE9E9', bd='9', fg='black', anchor='se', textvariable=result)
 label2.place(y=170, width=280, height=60)
 
-# 数字键按钮
+
 
 btn7 = tkinter.Button(root, text='7', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressNum('7'))
 btn7.place(x=0, y=285, width=70, height=55)
@@ -39,7 +39,7 @@ btn3.place(x=140, y=395, width=70, height=55)
 btn0 = tkinter.Button(root, text='0', font=('courier', 20), fg=('#4F4F4F'), bd=0.5, command=lambda: pressNum('0'))
 btn0.place(x=70, y=450, width=70, height=55)
 
-# 运算符号按钮
+
 btnac = tkinter.Button(root, text='AC', bd=0.5, font=('courier', 20), fg='orange', command=lambda: pressCompute('AC'))
 btnac.place(x=0, y=230, width=70, height=55)
 btnback = tkinter.Button(root, text='←', font=('courier', 20), fg='#4F4F4F', bd=0.5, command=lambda: pressCompute('b'))
